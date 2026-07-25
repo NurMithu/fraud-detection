@@ -116,12 +116,6 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-### Deploy for Free
-1. Push this repo to GitHub (public).
-2. Go to [share.streamlit.io](https://share.streamlit.io) → sign in with GitHub → **New app**.
-3. Select this repo, branch `main`, file path `app.py`.
-4. Click **Deploy** — you'll get a public link in a few minutes.
-5. Add that link to the "Live Demo" section above.
 
 ## Tech Stack
 
