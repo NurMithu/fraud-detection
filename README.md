@@ -10,7 +10,7 @@ End-to-end fraud detection case study built around the real technical challenge 
 
 ## Live Demo
 
-🔗 **[Try the live dashboard](#)** — upload your own transaction data and see live model comparison, an adjustable fraud-detection threshold, and flagged transactions. *(Add your deployed Streamlit URL here after deployment — see "Deploy" below.)*
+🔗 **[Try the live dashboard](https://fraud-detection-ywooiuryujcxw7q2ss5hsy.streamlit.app/)** 
 
 ## Overview
 
@@ -98,13 +98,6 @@ Public anonymized credit card transactions — European cardholders, September 2
 
 **The autoencoder's role:** trained *only* on legitimate transactions, with no fraud labels at all, it still catches 81% of fraud by flagging unusual transaction patterns — useful as a complementary signal for fraud types the supervised models haven't seen before.
 
-## Live Dashboard Features
-
-- **Model comparison** — trains Logistic Regression, Random Forest, and XGBoost live, automatically selects the best by PR-AUC
-- **Adjustable threshold slider** — see the real-time precision/recall tradeoff and choose your own operating point
-- **Flagged transactions view** — see which specific transactions get flagged at your chosen threshold, downloadable as CSV
-- **Business impact estimate** — translates model performance into estimated € caught
-- **Bring your own data** — upload your own transaction CSV (same schema) and every chart and model retrains instantly
 
 ## How to Run
 
