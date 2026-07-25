@@ -1,0 +1,64 @@
+{
+  "n_transactions": 50000,
+  "n_fraud": 492,
+  "fraud_rate_pct": 0.984,
+  "results": [
+    {
+      "model": "Logistic Regression (class-weighted)",
+      "Precision": 0.2937,
+      "Recall": 0.9189,
+      "F1": 0.4452,
+      "ROC_AUC": 0.9862,
+      "PR_AUC": 0.8586
+    },
+    {
+      "model": "Logistic Regression + SMOTE",
+      "Precision": 0.27,
+      "Recall": 0.9122,
+      "F1": 0.4167,
+      "ROC_AUC": 0.9845,
+      "PR_AUC": 0.8501
+    },
+    {
+      "model": "Random Forest",
+      "Precision": 0.959,
+      "Recall": 0.7905,
+      "F1": 0.8667,
+      "ROC_AUC": 0.9821,
+      "PR_AUC": 0.8853
+    },
+    {
+      "model": "XGBoost",
+      "Precision": 0.968,
+      "Recall": 0.8176,
+      "F1": 0.8864,
+      "ROC_AUC": 0.985,
+      "PR_AUC": 0.8844
+    },
+    {
+      "model": "Autoencoder (anomaly detection, unsupervised)",
+      "Precision": 0.4364,
+      "Recall": 0.8108,
+      "F1": 0.5674,
+      "ROC_AUC": null,
+      "PR_AUC": null
+    }
+  ],
+  "best_supervised_model": "Random Forest",
+  "chosen_threshold": 0.116,
+  "chosen_precision": 0.851,
+  "chosen_recall": 0.851,
+  "avg_fraud_amount": 122.21,
+  "estimated_savings_test_set": 15398.63,
+  "top_features": {
+    "V14": 0.1861,
+    "V10": 0.1229,
+    "V17": 0.1089,
+    "V4": 0.1013,
+    "V11": 0.0841,
+    "V12": 0.0806,
+    "V3": 0.0525,
+    "V16": 0.0333
+  },
+  "autoencoder_threshold": 1.1518
+}
